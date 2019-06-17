@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" 
+             xmlns="http://xmlns.jcp.org/xml/ns/persistence" 
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+             xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence 
+                                 http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+  <persistence-unit name="SISADVPU" 
+                    transaction-type="RESOURCE_LOCAL">
+    <provider>org.hibernate.ejb.HibernatePersistence</provider>
+    <class>CONTROLLER.Procuracao</class>
+    <class>CONTROLLER.Estado</class>
+    <class>CONTROLLER.Forum</class>
+    <class>CONTROLLER.Juiz</class>
+    <class>CONTROLLER.Contrato</class>
+    <class>CONTROLLER.Peticaotabeladejuros</class>
+    <class>CONTROLLER.Processopessoa</class>
+    <class>CONTROLLER.Pessoa</class>
+    <class>CONTROLLER.Cidade</class>
+    <class>CONTROLLER.Processopeticao</class>
+    <class>CONTROLLER.Processoaudiencia</class>
+    <class>CONTROLLER.Audiencia</class>
+    <class>CONTROLLER.Peticao</class>
+    <class>CONTROLLER.Peticaopessoa</class>
+    <class>CONTROLLER.Rua</class>
+    <class>CONTROLLER.Juridica</class>
+    <class>CONTROLLER.Relatoriodejuros</class>
+    <class>CONTROLLER.Contratopessoa</class>
+    <class>CONTROLLER.Processo</class>
+    <class>CONTROLLER.Jurisprudencia</class>
+    <class>CONTROLLER.Bairro</class>
+    <class>CONTROLLER.Advogado</class>
+    <class>CONTROLLER.Fisica</class>
+    <class>CONTROLLER.Telefone</class>
+    <properties>
+      <property name="javax.persistence.jdbc.url" 
+                value="jdbc:mysql://localhost:3306/fgspic?zeroDateTimeBehavior=convertToNull"/>
+      <property name="javax.persistence.jdbc.user" 
+                value="root"/>
+      <property name="javax.persistence.jdbc.driver" 
+                value="com.mysql.jdbc.Driver"/>
+      <property name="javax.persistence.jdbc.password" 
+                value=""/>
+      <property name="hibernate.cache.provider_class" 
+                value="org.hibernate.cache.NoCacheProvider"/>
+      <property name="javax.persistence.schema-generation.database.action" 
+                value="drop-and-create"/>
+    </properties>
+  </persistence-unit>
+</persistence>
